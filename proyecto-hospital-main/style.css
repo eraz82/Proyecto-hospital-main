@@ -1,0 +1,166 @@
+/* Estilos CSS para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #13a4cc;
+    color: #fff;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="button"] {
+    background-color:#13a4cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #138ab5;
+}
+
+button[type="button"]:hover{
+    background-color: #138ab5;
+}
+
+
+span {
+    color: red;
+}
+
+/* Estilos CSS para las tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #13a4cc;
+    background-color: #13a4cc;
+
+
+}
+
+td {
+    color: #fff;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tabla-container {
+    max-width: 80%;
+}
+.listado-container {
+    max-width: 70%;
+}
+.boton-container {
+    margin-block: 30px;
+}
+
+.listado-servicios a {
+    text-decoration: none;
+    color: #13a4cc;
+    font-size: 30px;
+}
+
+.listado-servicios li::marker {
+    content: 🐾;
+}
+
+/* Estilos CSS para la lista desplegable */
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Color de texto negro */
+    -webkit-appearance: none; /* Eliminar la apariencia por defecto */
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M6 7L0.564553 0.5H11.4354L6 7Z' fill='%2313a4cc'/%3E%3C/svg%3E"); /* Agregar una flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+
+.tabla-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #botonVolver {
+    margin-top: 20px;
+  }
+
+  input[type="submit"], input[type="button"] {
+    background-color: #138ab5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0d6d9c;
+  }
+    
+
+  

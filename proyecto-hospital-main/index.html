@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSPITAL SAN JOSÉ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>HOSPITAL SAN JOSÉ</h1>
+        </header>
+        <main>
+            <form>
+                <label for="formulario-select">Seleccione el formulario:</label>
+                <select id="formulario-select" name="formulario-select">
+                    <option value="registro-pacientes.html">Formulario de registro de pacientes</option>
+                    <option value="registro-medicos.html">Formulario de registro de médicos</option>
+                    <option value="pacientes.html">Listado de pacientes</option>
+                    <option value="medicos.html">Listado de médicos</option>
+                </select>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </main>
+    </div>
+    <script>
+        const select = document.getElementById("formulario-select");
+        const submitBtn = document.querySelector("form button[type=submit]");
+        
+        submitBtn.addEventListener("click", (event) => {
+            event.preventDefault(); // prevenir el envío del formulario predeterminado
+            
+            const selectedOption = select.options[select.selectedIndex].value;
+            window.location.href = selectedOption;
+        });
+    </script>
+    
+    
+</body>
+
+</html>
